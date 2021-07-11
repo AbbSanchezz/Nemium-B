@@ -12,21 +12,63 @@ body {
 	background: var(--back);
 	margin: 0;
 }
-
-.main-content {
-	padding-inline: 20px;
+/*MENU*/
+.menu {
+	display: block;
+	margin-inline: 16px;
+	margin-block-end: 48px;
+	max-inline-size: 388px;
 }
+
+.menu-content {
+	inset-block-start: 5px;
+}
+.menu-content p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+	margin-block-end: 16px;
+}
+.menu-content a {
+	text-decoration: none;
+	color: #616161;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 500;
+}
+.menu-content a:hover {
+	color: #fff;
+}
+.menu-content li {
+	padding: 8px;
+	border-radius: 4px;
+}
+.menu-content li:hover {
+	background: #000;
+}
+.menu-content ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*MENU*/
 .wrapper {
 	max-inline-size: 902px;
 	margin: auto;
+}
+.main-content {
+	padding-inline: 20px;
+}
+.nav {
+	display: none;
 }
 .hero {
 	block-size: 100px;
 	background-image: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
 }
-.header {
-	display: none;
-}
+
 h1 {
 	font-size: 24px;
 	line-height: 33px;
@@ -230,17 +272,20 @@ footer p {
 	color: var(--white)
 }
 @media screen and (min-width: 1366px) {
+@media screen and (min-width: 1366px) {
+  .nav {
+  	display: block;
+  }
   .hero {
     block-size: 250px;
   }
   .header {
-    position: sticky;
     display: block;
     inset-block-start: -45px;
   }
   .header-content {
     position: relative;
-    inset-block-start: 65px;
+    inset-block-start: 10px;
     padding-inline: 0;
   }
   header {
@@ -269,8 +314,53 @@ footer p {
 	nav details summary {
 		font-weight: 500; 
 	}
+	.nav p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+	margin-block-end: 16px;
+}
+	}
   h1 {
     font-size: 60px;
     margin-block-start: 30px;
+    margin-block-end: 30px;
+    margin-inline-start: -3px;
   }
+/*MENU*/
+.menu {
+	display: block;
+	margin-inline-start: -1px;
+	margin-block-end: 112px;
+	inline-size: 200px;
+}
+.menu-content summary {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #616161;
+	mar
+}
+.menu-content a {
+	text-decoration: none;
+	color: #616161;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 500;
+}
+.menu-content li {
+	padding: 8px;
+	border-radius: 4px;
+}
+.menu-content li:hover {
+	background: #000;
+	color: #fff;
+}
+.menu-content ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
 }
